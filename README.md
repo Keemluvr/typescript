@@ -40,3 +40,17 @@ Set
         set name(value: string){
             this._name = value
         }
+
+Interface
+
+        interface INomeinterface{
+        }
+
+Interface com atributo opcional
+
+        interface INomeinterface{
+                nome?: tipo   *<--- opcional*
+                nome: tipo    *<--- obrigatório*
+        }
+
+atributos ocionais é bom deixar por último nos parâmetros
