@@ -54,3 +54,11 @@ Interface com atributo opcional
         }
 
 atributos ocionais é bom deixar por último nos parâmetros
+
+Interface com Array
+
+        interface INomeinterface{
+                [index: number]: tipodoarray
+        }
+        let varRecebeInterface: INomeinterface
+        varRecebeInterface = ["Keila", "Giba"]

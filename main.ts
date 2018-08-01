@@ -155,7 +155,7 @@ let Camaro2 = new Car2("Camaro2", "Red", 56)
 console.log(Car2.list)
 ferrari.name = "Ferrari2"
 console.log(ferrari.name)
-*/
+
 //............................
 // Interfaces para tipos
 //..............................
@@ -191,3 +191,40 @@ function getColor(codeColor: string, title?: string): IColor{
 
 console.log(getColor("#000"))
 console.log(getColor("#000", "black"))
+*/
+//...............................
+//Interface para funções Array
+//...............................
+//--- exemplo 1
+interface ITypeFunc{
+    (a: number, b: number): boolean
+}
+
+let add: ITypeFunc
+
+add = function (carA: number, varB: number): boolean{
+    return true
+}
+
+//---- Exemplo 2
+interface IColor{
+    (codeColor: string, title?: string): {codeColor: string, title?: string}
+}
+
+let getColor: IColor
+
+getColor = function(codeColor: string, title?: string): {codeColor: string, title?: string}{
+    if(title){
+        return {codeColor: codeColor, title: title}
+    }
+    return {codeColor: codeColor}
+}
+
+//--- Interfaces para Arrays
+interface IArrayTypes{
+    [index: number]: string
+}
+
+let a: IArrayTypes
+a = ["Keila", "Giba"]
+console.log(a)
