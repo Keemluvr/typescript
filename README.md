@@ -13,7 +13,7 @@
  
 Você pode ter vários arquivos tsconfig.json em sua área de trabalho e executar várias compilações de uma só vez, se desejar (por exemplo, frontend e backend separadamente).
 
-## Declaração de variável
+# Typescript
 
 Variável inicializada:
 
@@ -62,3 +62,17 @@ Interface com Array
         }
         let varRecebeInterface: INomeinterface
         varRecebeInterface = ["Keila", "Giba"]
+
+Interface para classes
+
+        interface INomeinterface{
+                variavelAleatoria: tipodaVariavel
+                nomedoMetodo(): tipodoMetodo 
+        }
+
+Interface implementando outras interface
+
+        interface INomeinterface extends ISegunda, ITerceira{
+                
+        }
+
