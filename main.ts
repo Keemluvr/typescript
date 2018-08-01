@@ -1,3 +1,4 @@
+/*
 //Tipos
 let teste: boolean = true
 let id: number = 2
@@ -46,3 +47,115 @@ function printNumber(num:number):void{
     alert(num)
 }
 printNumber(32)
+
+*/
+//........................
+// Declaração de variáveis
+//........................
+/*
+let car: string = "Ferrari"
+
+function getCar(value:string):string{
+    let car = value
+    return car
+}
+
+console.log(getCar("Camaro"))
+console.log(car)
+
+function testScope(){
+    return car
+}
+
+console.log(testScope())
+//.........................
+function testA(){
+    let a = 1
+    a = 2
+    let b = testB()
+    a = 3
+    return b
+    function testB(){
+        return a
+    }
+}
+console.log(testA())
+//..........................
+function f(value: boolean){
+    let a = 100
+    if(value){
+        let b = a + 1
+        return b
+    }
+    //return b   <- da erro por conta do escopo
+}
+
+console.log(f(true))
+
+//...........................
+function g(condition: boolean, x: number): number{
+    if(condition){
+        let x = 100
+        return x
+    }
+    return x
+}
+console.log(g(true, 0))
+*/
+//.............................
+// Trabalhando com classes
+//.............................
+/*
+//public
+class Car{
+    constructor(
+        public name: string, 
+        public color: string, 
+        public power: number
+    ){}
+
+    printCar(): void{
+        console.log(`name: ${this.name}, color:${this.color}, power: ${this.power}`)
+    }
+}
+
+let camaro = new Car("Camaro", "Yellow", 45)
+camaro.printCar()
+
+//..............................
+// private
+class Car2{
+    private _name!: string
+    private _color!: string
+    private _power!: number
+    public static list: Array<string> = []
+
+    constructor(name: string, color: string, power: number){
+        this._name = name
+        this._color = color
+        this._power = power
+        Car2.list.push(name)
+    }
+
+    //get
+    get name(): string{
+        return this._name
+    }
+
+    //set
+    set name(value: string){
+        this._name = value
+    }
+}
+let ferrari = new Car2("Ferrari", "red", 50)
+console.log(ferrari)
+console.log(Car2.list)
+
+let Camaro2 = new Car2("Camaro2", "Red", 56)
+console.log(Car2.list)
+ferrari.name = "Ferrari2"
+console.log(ferrari.name)
+*/
+//..............................
+// Interfaces para tipos
+//..............................

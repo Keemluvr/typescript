@@ -12,3 +12,31 @@
 * Feito! Seu projeto é recompilado em cada arquivo salvo.
  
 Você pode ter vários arquivos tsconfig.json em sua área de trabalho e executar várias compilações de uma só vez, se desejar (por exemplo, frontend e backend separadamente).
+
+## Declaração de variável
+
+Variável inicializada:
+
+        nome: tipo = valor
+
+Variável sem inicializar:    
+**OBS: Lembrar do !**  
+                
+        nome!: tipo
+
+Variavel privada:
+**OBS: Lembrar do _ antes do nome**  
+
+        _nome!: tipo
+
+Get
+
+        get name(): string{
+            return this._name
+        }
+
+Set
+
+        set name(value: string){
+            this._name = value
+        }
