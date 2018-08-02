@@ -90,3 +90,17 @@ Obtem o valor da variável já
                 console.log(car)
         }
 
+Module
+
+        module App{
+                class Car{      <-- essa classe é interna, não pode ser acessada fora do module
+                        name!: string
+                        color!: string
+                }
+
+                export class Car2{      <-- Essa classe pode ser acessada fora do module
+                        name!: string
+                        color!: string
+                        power!: number
+                }
+        }
