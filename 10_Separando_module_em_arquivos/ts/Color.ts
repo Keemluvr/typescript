@@ -1,4 +1,4 @@
-module ColorModule{
+export module ColorModule{
     export class Color{
         name!: string
         code !: string

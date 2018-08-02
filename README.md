@@ -104,3 +104,14 @@ Module
                         power!: number
                 }
         }
+
+## Soluções  
+error TS2531: Object is possibly 'null'.
+
+        document.getElementById("app")!.innerHTML =  `   <--- se o elemento id estiver null, só colocar ! no final da operação
+                <div>
+                        <ul>
+                                <li>${ p.name } - ${ p.description } - $${ p.value } </li>
+                        </ul>
+                </div>
+        `

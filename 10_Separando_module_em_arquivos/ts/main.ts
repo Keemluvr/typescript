@@ -1,7 +1,7 @@
-/// <reference path="Color.ts" />
+import {ColorModule} from './Color'
 
-module ColorModule{
-    let red = new Color()
+module ColorModule2{
+    let red = new ColorModule.Color()
     red.name = "red"
     red.code = "#FF0000"
     console.log(red.getColor())

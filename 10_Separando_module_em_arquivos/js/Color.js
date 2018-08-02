@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var ColorModule;
 (function (ColorModule) {
     var Color = /** @class */ (function () {
@@ -10,4 +11,4 @@ var ColorModule;
         return Color;
     }());
     ColorModule.Color = Color;
-})(ColorModule || (ColorModule = {}));
+})(ColorModule = exports.ColorModule || (exports.ColorModule = {}));
